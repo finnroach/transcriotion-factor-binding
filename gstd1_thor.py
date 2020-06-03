@@ -32,7 +32,7 @@ for i in range(len(DNA_column)):
     seq = str(DNA).lower()
     gene = gene_column.iloc[i]
     print('\n' + Fore.RED + '\033[5m' + gene + Style.RESET_ALL)
-    ## reads DNA sequence by creating a bidning score for a segement equal to the length of the transfac binding site then shifting over one base and creating a new binding score
+    ## reads DNA sequence by creating a binding score for a segement equal to the length of the transfac binding site then shifting over one base and creating a new binding score
     def transcription_factor (seq, profile):
         width = len(profile['T'])
         bindingscore = []
